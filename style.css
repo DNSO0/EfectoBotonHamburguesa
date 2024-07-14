@@ -47,12 +47,12 @@ body {
 
 .ring i:nth-child(4) {
   border-radius: 32% 70% 66% 29%/48% 42% 53% 57%;
-  animation: animate2 10s linear infinite;
+  animation: animate2 7s linear infinite;
 }
 
 .ring:hover i {
-  border: 6px solid var(--clr);
-  filter: drop-shadow(0 0 20px var(--clr));
+  border: 2px solid var(--clr);
+  filter: drop-shadow(0 0 8px var(--clr));
 }
 
 @keyframes animate {
