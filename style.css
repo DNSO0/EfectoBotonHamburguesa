@@ -55,6 +55,37 @@ body {
   filter: drop-shadow(0 0 8px var(--clr));
 }
 
+/* Menu lateral */
+.menu {
+  display: none; /* Oculta el menú por defecto */
+  position: absolute; /* Posiciona el menú relativo al contenedor */
+  background: #222; /* Fondo del menú */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  list-style: none; /* Quita los puntos de la lista */
+  z-index: 10; /* Asegura que el menú esté encima de otros elementos */
+  left: 50%; /* Centra el menú horizontalmente */  
+  transform: translateX(200%); /* Ajusta para centrar correctamente */
+}
+
+.menu li {
+  margin: 5px 0; /* Espaciado entre las opciones */
+}
+
+.menu a {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.menu a:hover {
+  color: #00a105; /* Color al pasar el ratón */
+}
+
+/* Muestra el menú cuando el checkbox está marcado */
+#checkbox:checked ~ .menu {
+  display: block; /* Muestra el menú */
+}
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
